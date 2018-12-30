@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:gravity="center">
+
+        <!-- 语音/文字切换-->
+        <ImageView
+            android:id="@+id/btn_voice_or_text"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/btn_voice_or_text"/>
+
+        <!--语音输入-->
+        <Button
+            android:id="@+id/btn_voice"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/rl_multi_and_send"
+            android:layout_toRightOf="@+id/btn_voice_or_text"
+            android:background="@drawable/btn_voice"
+            android:text="按住说话"
+            android:textColor="#727272"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/typingbar_editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/input_bg_gray"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:maxLines="4" />
+
+        <LinearLayout
+            android:id="@+id/rl_multi_and_send"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!--表情-->
+            <ImageView
+                android:id="@+id/btn_face"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_face_nomal"/>
+
+            <!--发送-->
+            <Button
+                android:id="@+id/typingbar_btn_send"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_send_bg_disable"
+                android:text="发送"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

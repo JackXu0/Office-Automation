@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#ffffff">
+    <TextView
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:text="详细新闻"
+        android:textColor="#ffffff"
+        android:gravity="center">
+
+    </TextView>
+    <ImageView
+        android:layout_below="@id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/image"
+        android:background="@drawable/homepage_news_test_image1"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="130dp"
+        >
+        <LinearLayout
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/arrow_back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:paddingLeft="0dp"
+                android:text="新闻"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout1"
+        android:gravity="center"
+        android:background="#fff200"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:text="西浦学子暑假“不休假” 忙于参与国际科研项目"/>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017年8月8号"
+                android:textColor="#1C1C1C"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout2"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1C1C1C"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp"
+            android:text="     暑假中，学生们通常会去旅行、看电视剧或拜访家人朋友，但有一些人有不一样的选择。
+
+       一群西交利物浦大学的中国学生和国际生就选择充分利用暑假时光，在生物科学系实验室中参与科研项目。
+
+       今年七月份刚从西浦生物科学专业毕业的石浩然（下图）目前在Boris Tefsen博士的指导下开展关于抗生素检测的研究。"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

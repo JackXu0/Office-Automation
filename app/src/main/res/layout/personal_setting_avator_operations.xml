@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="拍照"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:background="#f5f5f5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#969696">
+    </LinearLayout>
+    <TextView
+        android:id="@+id/choose_from_gallary"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="从手机相册选择"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:background="#f5f5f5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#969696">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cannel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="取消"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:background="#f5f5f5"/>
+</LinearLayout>

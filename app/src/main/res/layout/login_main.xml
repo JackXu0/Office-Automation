@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:id="@+id/login_username_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        >
+        <EditText
+            android:id="@+id/username_eb"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:hint="用户名 ： "
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:textColorHint="#D3D3D3"
+            android:drawableBottom="@drawable/login_editbox"
+            android:background="@null"
+            android:textColor="#696969"
+            >
+            </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/login_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+
+        <EditText
+            android:id="@+id/password_eb"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:hint="密码 ： "
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:textColorHint="#D3D3D3"
+            android:background="@null"
+            android:drawableBottom="@drawable/login_editbox"
+            android:textColor="#696969"
+            />
+
+    </LinearLayout>
+    <LinearLayout android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:id="@+id/login_ip_layout"
+        >
+
+        <TextView
+            android:id="@+id/login_ip_textview"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="点击选择服务器"
+            android:textSize="18sp"
+            android:drawableBottom="@drawable/login_editbox"
+            android:background="@null"
+            android:textColor="#6E8B3D"
+            />
+        <ImageView
+            android:id="@+id/login_setting"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="35dp"
+            android:src="@drawable/login_server"/>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:id="@+id/login_picker_layout"
+        >
+        <wingsoloar.com.buding_oa.views.ExpandView_login
+            android:id="@+id/login_expandView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+
+        android:layout_marginTop="15dp">
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="@drawable/login_off"
+            />
+    </LinearLayout>
+
+</LinearLayout>

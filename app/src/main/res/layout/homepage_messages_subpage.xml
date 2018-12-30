@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/top_message"
+        android:id="@+id/top_message"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/avator_male"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/sender_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:text="王健林"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/send_time"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:text="April 12, 2015"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/files"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="附件："/>
+
+        <com.nex3z.flowlayout.FlowLayout
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:id="@+id/homepage_messages_subpage_file_flowlayout"
+            >
+
+        </com.nex3z.flowlayout.FlowLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/homepage_messages_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Dear all,
+Please click the links below to view the notices:
+
+Notice for Power Supply Cut-off on the Morning of 28th August in South Campus
+
+
+
+Note: If OS of mobile device is Android, please use browser “Opera” to open file."
+        android:layout_weight="1"/>
+
+</LinearLayout>

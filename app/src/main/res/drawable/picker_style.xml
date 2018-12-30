@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <style android:name="NumberPickerText">
+        <item android:name="android:textSize">22dp</item>
+    </style>
+</selector>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/top_message"
+        android:id="@+id/top_message"/>
+
+    <RelativeLayout
+        android:id="@+id/receivers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:gravity="center_vertical"
+            android:text="到："/>
+
+        <com.nex3z.flowlayout.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="55dp"
+            android:id="@+id/sending_interface_flowlayout"
+            >
+
+        </com.nex3z.flowlayout.FlowLayout>
+        <ImageView
+            android:id="@+id/add_receivers_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/sending_interface_add_receivers"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/files"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:gravity="center_vertical"
+            android:text="附件："/>
+
+        <com.nex3z.flowlayout.FlowLayout
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="55dp"
+            android:id="@+id/sending_interface_file_flowlayout"
+            >
+
+        </com.nex3z.flowlayout.FlowLayout>
+        <ImageView
+            android:id="@+id/add_receivers_file_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/load_files_image"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="top"
+            android:enabled="true"
+            android:background="@android:color/transparent"
+            android:hint="输入内容 ："
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+           >
+
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

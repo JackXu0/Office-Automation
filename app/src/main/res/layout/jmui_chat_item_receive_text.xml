@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/jmui_avatar_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/avator_male" />
+
+        <TextView
+            android:id="@+id/jmui_display_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/jmui_avatar_iv"
+            android:ems="5"
+            android:textColor="#B3B3B3"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/jmui_receive_text"
+            android:layout_toRightOf="@id/jmui_display_name_tv"
+            android:autoLink="email|phone|web"
+            android:maxWidth="225dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingTop="9dp"
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/jmui_msg_receive_bg"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="18dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

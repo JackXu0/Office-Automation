@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/homepage_messages_item"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:stateListAnimator="@drawable/lift_on_touch"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/image_news"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/homepage_news_test_image1"
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:text="2017年8月22日"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffffff"
+                android:layout_above="@id/title"/>
+            
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="西浦2017招生工作结束 将迎来4000余名国内外本硕新生"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:padding="3dp"
+                android:paddingBottom="3dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentBottom="true"/>
+           
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

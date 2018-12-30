@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="10dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_marginTop="11dp"
+        android:id="@+id/bar_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:id="@+id/bar_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar_iv"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+         />
+
+    <TextView
+        android:id="@+id/bar_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-12dp"
+        android:layout_toRightOf="@+id/bar_iv"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="13dp" />
+</RelativeLayout>

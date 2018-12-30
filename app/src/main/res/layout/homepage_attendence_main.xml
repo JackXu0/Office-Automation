@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/top_message"
+        android:id="@+id/top_message1"/>
+    <RelativeLayout
+        android:id="@+id/attendence_location_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/top_message1">
+        <Button
+            android:id="@+id/location_label"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="0dp"
+            android:text="地点"
+            android:background="@null"
+            android:textColor="#808080"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/attdence_main_location_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/location_label"
+            android:layout_marginLeft="20dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="#000000"
+            android:minWidth="230dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/attdence_editview"
+            />
+        <ImageView
+            android:id="@+id/attendence_main_get_location"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/attendence_main_locate"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/attendence_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E8E8E8"
+        android:layout_below="@id/attendence_location_layout"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/attendence_location_extra_info"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/attendence_location_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/attendence_explain_label"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="0dp"
+            android:text="说明"
+            android:background="@null"
+            android:textColor="#808080"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/attdence_main_explain_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="230dp"
+            android:minHeight="50dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#808080"
+            android:textColor="#000000"
+            android:lineSpacingExtra="2dp"
+            android:background="@drawable/attdence_editview"
+            android:textSize="15dp"
+            android:hint="此行目的"
+            android:enabled="true"
+            android:layout_alignTop="@+id/attendence_explain_label"
+            android:layout_toRightOf="@+id/attendence_explain_label"
+            android:layout_toEndOf="@+id/attendence_explain_label"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/attendence_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E8E8E8"
+        android:orientation="horizontal"
+        android:layout_below="@id/attendence_location_extra_info">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/attendence_location_picture"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/attendence_line2"
+        >
+        <Button
+            android:id="@+id/attendence_picture_label"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="0dp"
+            android:text="记录"
+            android:background="@null"
+            android:textColor="#808080"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:id="@+id/attendence_picture_content"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/attendence_picture_label"/>
+
+        <ImageView
+            android:id="@+id/attendence_main_get_photo"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/attendence_main_photo"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/attendence_line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E8E8E8"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/attendence_location_picture">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="打卡"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#EE2C2C"
+            android:layout_gravity="center"
+            android:id="@+id/attendence_submit"/>
+    </LinearLayout>
+
+</RelativeLayout>
